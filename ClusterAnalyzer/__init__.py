@@ -12,3 +12,27 @@ from .statistical_analysis import (
     generate_plots,
 )
 from .visualization import plot_clusters
+
+__version__ = "0.0.1"
+
+__all__ = [
+"GOL",
+"LogisticGOL",
+"lambda_neighborhood_transitions",
+
+"calculate_activity_rate",
+
+"analyze_clusters",
+"box_counting",
+
+"convert_size_counts",
+"sizes_counts",
+"uniform_downsample",
+"compute_gof",
+"compute_quiet_continuous",
+"plpvalue",
+"perform_plausibility_tests",
+"generate_plots",
+
+"plot_clusters",
+]
