@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cluster_analyzer"
+dynamic = ["version"]
+description = "A library to analyze critical behavior, self-similarity, and fractal dimension of clusters in cellular automata."
+authors = [
+    {name = "Hakan Akgün", email = "hakanakgun317@gmail.com"},
+    {name = "Xianquan (Sarinstein) Yan", email = "xianquanyan@gmail.com"},
+]
+maintainers  = [
+    {name = "Hakan Akgün", email = "hakanakgun317@gmail.com"},
+]
+readme = {"file" = "README.md", "content-type" = "text/markdown"}
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "numba",
+    "powerlaw",
+    "sympy",
+    "tqdm",
+    "pandas",
+    "matplotlib~=3.7.5",
+]
+
+[project.optional-dependencies]
+all = [
+    "imageio",
+    "joblib",
+]
+dev = [
+    "hatch",
+]
+
+[project.urls]
+homepage = "https://github.com/HakanAkgn/ClusterAnalyzer"
+repository = "https://github.com/HakanAkgn/ClusterAnalyzer"
+"bug tracker" = "https://github.com/HakanAkgn/ClusterAnalyzer/issues"
+
+[tool.hatch.version]
+path = "src/cluster_analyzer/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "assets",
+  "Paper_Data",
+  "*.ipynb",     # any notebook in project root
+  "**/*.ipynb",  # any notebook in sub-dirs
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cluster_analyzer"]
