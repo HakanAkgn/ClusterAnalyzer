@@ -3,7 +3,7 @@
 `cluster_analyzer` is a Python library designed to analyze critical behavior, self-similarity, and fractal dimensions of clusters in cellular automata. It provides tools for simulating cluster formation, performing statistical analyses, and visualizing results.
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/HakanAkgn/ClusterAnalyzer/main/assets/fractal_latest.png" width="800" />
+    <img src="https://raw.githubusercontent.com/HakanAkgn/ClusterAnalyzer/main/assets/Feature_Image.png" width="800" />
 </p>
 
 ## Features
