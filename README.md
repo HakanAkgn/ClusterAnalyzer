@@ -48,13 +48,11 @@ See the [Data Display Notebook](https://github.com/HakanAkgn/ClusterAnalyzer/blo
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@misc{akgun2025scaleinvariantdynamicspurelydeterministic,
-      title={Scale-invariant dynamics in a purely deterministic Game of Life model}, 
-      author={Hakan Akgun and Xianquan Yan and Tamer Taskiran and Muhamet Ibrahimi and Ching Hua Lee and Seymur Jahangirov},
-      year={2025},
-      eprint={2411.07189},
-      archivePrefix={arXiv},
-      primaryClass={cond-mat.stat-mech},
-      url={https://arxiv.org/abs/2411.07189}, 
+@article{akgun2026deterministic,
+  title={Deterministic scale-invariant dynamics in a logistic Game-of-Life model},
+  author={Akg{\"u}n, Hakan and Yan, Xianquan and Ta{\c{s}}k{\i}ran, Tamer and Ibrahimi, Muhamet and Lee, Ching Hua and Jahangirov, Seymur},
+  journal={Communications Physics},
+  year={2026},
+  publisher={Nature Publishing Group UK London}
 }
 ```
